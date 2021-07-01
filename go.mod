@@ -1,4 +1,4 @@
-module github.com/bettercap/gatt
+module github.com/Jon-Bright/gatt
 
 go 1.13
 

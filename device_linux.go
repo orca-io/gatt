@@ -4,8 +4,8 @@ import (
 	"encoding/binary"
 	"net"
 
-	"github.com/bettercap/gatt/linux"
-	"github.com/bettercap/gatt/linux/cmd"
+	"github.com/Jon-Bright/gatt/linux"
+	"github.com/Jon-Bright/gatt/linux/cmd"
 )
 
 type device struct {

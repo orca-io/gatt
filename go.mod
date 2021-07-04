@@ -3,8 +3,6 @@ module github.com/Jon-Bright/gatt
 go 1.13
 
 require (
-	github.com/bettercap/gatt v0.0.0-20210514133428-df6e615f2f67
-	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/kr/text v0.2.0 // indirect
 	github.com/mattn/go-colorable v0.1.8 // indirect
 	github.com/mgutz/ansi v0.0.0-20200706080929-d51e80ef957d // indirect

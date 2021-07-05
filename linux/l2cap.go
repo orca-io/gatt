@@ -190,6 +190,9 @@ func (c *conn) Close() error {
 // 0x15 LE Credit Based Connection response		0x0005
 // 0x16 LE Flow Control Credit					0x0005
 func (c *conn) handleSignal(a *aclData) error {
+	if len(a.b) < 5 {
+		return fmt.Errorf("L2CAP signal without packet type")
+	}
 	// First 4 bytes are header - the code is at byte 4
 	switch a.b[4] {
 	case 0x12:

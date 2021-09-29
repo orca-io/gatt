@@ -1,4 +1,4 @@
-module github.com/Jon-Bright/gatt
+module github.com/lightblox/gatt
 
 go 1.13
 

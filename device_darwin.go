@@ -9,7 +9,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/Jon-Bright/gatt/xpc"
+	"github.com/lightblox/gatt/xpc"
 )
 
 const (

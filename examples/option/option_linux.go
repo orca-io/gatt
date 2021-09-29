@@ -1,8 +1,8 @@
 package option
 
 import (
-	"github.com/Jon-Bright/gatt"
-	"github.com/Jon-Bright/gatt/linux/cmd"
+	"github.com/lightblox/gatt"
+	"github.com/lightblox/gatt/linux/cmd"
 )
 
 var DefaultClientOptions = []gatt.Option{

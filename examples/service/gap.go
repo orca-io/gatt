@@ -1,6 +1,6 @@
 package service
 
-import "github.com/Jon-Bright/gatt"
+import "github.com/lightblox/gatt"
 
 var (
 	attrGAPUUID = gatt.UUID16(0x1800)

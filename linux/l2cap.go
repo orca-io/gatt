@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/Jon-Bright/gatt/linux/cmd"
+	"github.com/lightblox/gatt/linux/cmd"
 	log "github.com/sirupsen/logrus"
 )
 

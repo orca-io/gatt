@@ -7,9 +7,9 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"github.com/Jon-Bright/gatt"
-	"github.com/Jon-Bright/gatt/examples/option"
-	"github.com/Jon-Bright/gatt/examples/service"
+	"github.com/lightblox/gatt"
+	"github.com/lightblox/gatt/examples/option"
+	"github.com/lightblox/gatt/examples/service"
 )
 
 func main() {

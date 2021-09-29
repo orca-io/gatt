@@ -4,7 +4,8 @@ package main
 
 import (
 	"fmt"
-	"log"
+
+	log "github.com/sirupsen/logrus"
 
 	"github.com/Jon-Bright/gatt"
 	"github.com/Jon-Bright/gatt/examples/option"

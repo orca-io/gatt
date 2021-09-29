@@ -5,7 +5,8 @@ import (
 	"errors"
 	"fmt"
 	"io"
-	"log"
+
+	log "github.com/sirupsen/logrus"
 
 	"github.com/Jon-Bright/gatt/linux/evt"
 	"github.com/Jon-Bright/gatt/linux/util"

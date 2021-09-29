@@ -6,8 +6,9 @@ import (
 	"bytes"
 	"flag"
 	"fmt"
-	"log"
 	"time"
+
+	log "github.com/sirupsen/logrus"
 
 	"github.com/Jon-Bright/gatt"
 	"github.com/Jon-Bright/gatt/examples/service"

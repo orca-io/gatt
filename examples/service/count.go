@@ -2,8 +2,9 @@ package service
 
 import (
 	"fmt"
-	"log"
 	"time"
+
+	log "github.com/sirupsen/logrus"
 
 	"github.com/Jon-Bright/gatt"
 )

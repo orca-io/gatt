@@ -3,8 +3,9 @@ package linux
 import (
 	"fmt"
 	"io"
-	"log"
 	"sync"
+
+	log "github.com/sirupsen/logrus"
 
 	"github.com/Jon-Bright/gatt/linux/cmd"
 	"github.com/Jon-Bright/gatt/linux/evt"

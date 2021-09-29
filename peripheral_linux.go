@@ -6,9 +6,10 @@ import (
 	"errors"
 	"fmt"
 	"io"
-	"log"
 	"net"
 	"strings"
+
+	log "github.com/sirupsen/logrus"
 
 	"github.com/Jon-Bright/gatt/linux"
 )

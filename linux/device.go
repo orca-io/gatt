@@ -2,10 +2,11 @@ package linux
 
 import (
 	"errors"
-	"log"
 	"sync"
 	"syscall"
 	"unsafe"
+
+	log "github.com/sirupsen/logrus"
 
 	"github.com/Jon-Bright/gatt/linux/gioctl"
 	"github.com/Jon-Bright/gatt/linux/socket"

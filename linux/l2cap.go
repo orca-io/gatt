@@ -3,6 +3,7 @@ package linux
 import (
 	"fmt"
 	"io"
+	"sync"
 
 	"github.com/lightblox/gatt/linux/cmd"
 	log "github.com/sirupsen/logrus"
@@ -38,6 +39,7 @@ type conn struct {
 	attr  uint16
 	aclc  chan *aclData
 	datac chan []byte
+	wmu  *sync.Mutex
 }
 
 func newConn(hci *HCI, hh uint16) *conn {
@@ -46,6 +48,7 @@ func newConn(hci *HCI, hh uint16) *conn {
 		attr:  hh,
 		aclc:  make(chan *aclData),
 		datac: make(chan []byte, 32),
+		wmu:  &sync.Mutex{},
 	}
 	go c.loop()
 	return c
@@ -110,6 +113,7 @@ func (c *conn) write(cid int, b []byte) (int, error) {
 			uint8(cid), uint8(cid >> 8), // l2cap header
 		}, b...)
 
+	c.wmu.Lock()
 	n := 4 + tlen // l2cap header + l2cap payload
 	for n > 0 {
 		dlen := n
@@ -130,6 +134,7 @@ func (c *conn) write(cid int, b []byte) (int, error) {
 		flag = 0x10  // the rest of iterations attr continued segments, if any.
 		n -= dlen
 	}
+	c.wmu.Unlock()
 
 	return len(b), nil
 }

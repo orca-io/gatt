@@ -11,7 +11,7 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"github.com/lightblox/gatt/linux"
+	"github.com/orca-io/gatt/linux"
 )
 
 type peripheral struct {

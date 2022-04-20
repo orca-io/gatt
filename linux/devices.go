@@ -1,6 +1,6 @@
 package linux
 
-import "github.com/lightblox/gatt/linux/gioctl"
+import "github.com/orca-io/gatt/linux/gioctl"
 
 const (
 	ioctlSize     = uintptr(4)

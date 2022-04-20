@@ -3,7 +3,7 @@ package service
 import (
 	"log"
 
-	"github.com/lightblox/gatt"
+	"github.com/orca-io/gatt"
 )
 
 var (

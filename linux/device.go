@@ -8,8 +8,8 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"github.com/lightblox/gatt/linux/gioctl"
-	"github.com/lightblox/gatt/linux/socket"
+	"github.com/orca-io/gatt/linux/gioctl"
+	"github.com/orca-io/gatt/linux/socket"
 	"golang.org/x/sys/unix"
 )
 

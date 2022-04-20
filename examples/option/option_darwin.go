@@ -1,6 +1,6 @@
 package option
 
-import "github.com/lightblox/gatt"
+import "github.com/orca-io/gatt"
 
 var DefaultClientOptions = []gatt.Option{
 	gatt.MacDeviceRole(gatt.CentralManager),

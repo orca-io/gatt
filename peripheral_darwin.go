@@ -4,7 +4,7 @@ import (
 	"errors"
 	"log"
 
-	"github.com/lightblox/gatt/xpc"
+	"github.com/orca-io/gatt/xpc"
 )
 
 type peripheral struct {

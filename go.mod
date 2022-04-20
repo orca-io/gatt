@@ -1,4 +1,4 @@
-module github.com/lightblox/gatt
+module github.com/orca-io/gatt
 
 go 1.13
 

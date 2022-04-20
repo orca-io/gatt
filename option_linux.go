@@ -4,7 +4,7 @@ import (
 	"errors"
 	"io"
 
-	"github.com/lightblox/gatt/linux/cmd"
+	"github.com/orca-io/gatt/linux/cmd"
 )
 
 // LnxDeviceID specifies which HCI device to use.

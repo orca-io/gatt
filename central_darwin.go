@@ -3,7 +3,7 @@ package gatt
 import (
 	"sync"
 
-	"github.com/lightblox/gatt/xpc"
+	"github.com/orca-io/gatt/xpc"
 )
 
 type central struct {

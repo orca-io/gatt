@@ -6,7 +6,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/lightblox/gatt/linux/util"
+	"github.com/orca-io/gatt/linux/util"
 )
 
 type EventHandler interface {

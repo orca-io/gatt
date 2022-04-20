@@ -7,8 +7,8 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"github.com/lightblox/gatt"
-	"github.com/lightblox/gatt/examples/option"
+	"github.com/orca-io/gatt"
+	"github.com/orca-io/gatt/examples/option"
 )
 
 func onStateChanged(d gatt.Device, s gatt.State) {

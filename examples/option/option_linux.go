@@ -1,8 +1,8 @@
 package option
 
 import (
-	"github.com/lightblox/gatt"
-	"github.com/lightblox/gatt/linux/cmd"
+	"github.com/orca-io/gatt"
+	"github.com/orca-io/gatt/linux/cmd"
 )
 
 var DefaultClientOptions = []gatt.Option{

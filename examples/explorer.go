@@ -10,8 +10,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/lightblox/gatt"
-	"github.com/lightblox/gatt/examples/option"
+	"github.com/orca-io/gatt"
+	"github.com/orca-io/gatt/examples/option"
 )
 
 var done = make(chan struct{})

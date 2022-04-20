@@ -1,6 +1,6 @@
 package service
 
-import "github.com/lightblox/gatt"
+import "github.com/orca-io/gatt"
 
 func NewBatteryService() *gatt.Service {
 	lv := byte(100)

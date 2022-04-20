@@ -7,9 +7,9 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"github.com/lightblox/gatt/linux/cmd"
-	"github.com/lightblox/gatt/linux/evt"
-	"github.com/lightblox/gatt/linux/util"
+	"github.com/orca-io/gatt/linux/cmd"
+	"github.com/orca-io/gatt/linux/evt"
+	"github.com/orca-io/gatt/linux/util"
 	"golang.org/x/sys/unix"
 )
 

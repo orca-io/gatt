@@ -10,9 +10,9 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"github.com/lightblox/gatt"
-	"github.com/lightblox/gatt/examples/service"
-	"github.com/lightblox/gatt/linux/cmd"
+	"github.com/orca-io/gatt"
+	"github.com/orca-io/gatt/examples/service"
+	"github.com/orca-io/gatt/linux/cmd"
 )
 
 // server_lnx implements a GATT server.

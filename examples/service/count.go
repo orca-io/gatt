@@ -6,7 +6,7 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"github.com/lightblox/gatt"
+	"github.com/orca-io/gatt"
 )
 
 func NewCountService() *gatt.Service {

@@ -373,6 +373,7 @@ func (h *HCI) handleConnection(b []byte) {
 		pd.Conn = c
 		h.AcceptSlaveHandler(pd)
 	} else {
+		h.plistmu.Unlock()
 		log.Printf("HCI: can't find data for %v", ep.PeerAddress)
 	}
 }
@@ -384,15 +385,16 @@ func (h *HCI) handleDisconnectionComplete(b []byte) error {
 	}
 	hh := ep.ConnectionHandle
 	h.connsmu.Lock()
-	defer h.connsmu.Unlock()
 	c, found := h.conns[hh]
 	if !found {
 		// should not happen, just be cautious for now.
+		h.connsmu.Unlock()
 		log.Printf("l2conn: disconnecting a disconnected 0x%04X connection", hh)
 		return nil
 	}
 	delete(h.conns, hh)
 	close(c.aclc)
+	h.connsmu.Unlock()
 	h.setAdvertiseEnable(true)
 	return nil
 }

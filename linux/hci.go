@@ -407,7 +407,7 @@ func (h *HCI) handleLTKRequest(b []byte) {
 	}
 	hh := ep.ConnectionHandle
 	h.connsmu.Lock()
-	defer h.connsmu.Unlock()
+	h.connsmu.Unlock()
 	_, found := h.conns[hh]
 	if !found {
 		// should not happen, just be cautious for now.

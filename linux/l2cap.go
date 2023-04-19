@@ -161,8 +161,8 @@ func (c *conn) Close() error {
 	h := c.hci
 	hh := c.attr
 	h.connsmu.Lock()
-	defer h.connsmu.Unlock()
 	_, found := h.conns[hh]
+	h.connsmu.Unlock()
 	if !found {
 		log.Printf("l2conn: 0x%04x already disconnected", hh)
 		return nil

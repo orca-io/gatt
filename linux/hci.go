@@ -407,8 +407,8 @@ func (h *HCI) handleLTKRequest(b []byte) {
 	}
 	hh := ep.ConnectionHandle
 	h.connsmu.Lock()
-	h.connsmu.Unlock()
 	_, found := h.conns[hh]
+	h.connsmu.Unlock()
 	if !found {
 		// should not happen, just be cautious for now.
 		log.Printf("ltkrequest: error, connection 0x%04X probably expired", hh)
